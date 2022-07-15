@@ -1,0 +1,286 @@
+body {
+  background-color: #2e2e2e;
+}
+
+.index-settings {
+  left: 100px;
+  width: 200px;
+  height: 550px;
+  position: absolute;
+  background-color: #3f3f3f;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.index-edt-sell-gwei {
+  top: 150px;
+  left: 3px;
+  width: 120px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+.index-edt-gas-limit {
+  top: 210px;
+  left: 3px;
+  width: 120px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+.index-edt-deadline {
+  top: 270px;
+  left: 3px;
+  width: 120px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+.index-edt-buy-gwei {
+  top: 90px;
+  left: 3px;
+  width: 120px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+.index-edt-slippage {
+  top: 30px;
+  left: 3px;
+  width: 120px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+.index-lbl-buy-gwei {
+  top: 70px;
+  left: 3px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-lbl-gas-limit {
+  top: 190px;
+  left: 3px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-lbl-deadline {
+  top: 250px;
+  left: 3px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-lbl-sell-gwei {
+  top: 130px;
+  left: 3px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-lbl-slippage {
+  top: 10px;
+  left: 3px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-chk-honeypot {
+  top: 308px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+}
+.index-lbl-honeypot {
+  top: 307px;
+  left: 27px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-lbl-max-buy-tax {
+  top: 330px;
+  left: 3px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-lbl-max-sell-tax {
+  top: 380px;
+  left: 3px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-edt-max-sell-tax {
+  top: 400px;
+  left: 3px;
+  width: 120px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+.index-edt-max-buy-tax {
+  top: 350px;
+  left: 3px;
+  width: 120px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+.index-edt-sell-percentage {
+  top: 510px;
+  left: 3px;
+  width: 120px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+.index-chk-take-profit {
+  top: 438px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+}
+.index-lbl-take-profit {
+  top: 435px;
+  left: 27px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-edt-take-profit {
+  top: 460px;
+  left: 3px;
+  width: 120px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+.index-lbl-sell-profit {
+  top: 490px;
+  left: 3px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+
+.index-index {
+  width: 598px;
+  height: 636px;
+  left: 400px;
+  position: fixed;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+}
+.index-textarea {
+  left: 27px;
+  width: 548px;
+  bottom: 11px;
+  height: 439px;
+  position: absolute;
+}
+.index-edt-amount-snipe {
+  top: 137px;
+  left: 29px;
+  width: 136px;
+  height: 36px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+.index-edt-max-spend {
+  top: 136px;
+  left: 295px;
+  width: 120px;
+  height: 36px;
+  position: absolute;
+  background-color: Black80 (Scheme);
+}
+.index-lbl-amount {
+  top: 114px;
+  left: 33px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-lbl-max-spend {
+  top: 113px;
+  left: 295px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-btn-sell-normal {
+  top: 76px;
+  color: var(--dl-color-scheme-white80);
+  right: 23px;
+  width: 125px;
+  height: 41px;
+  position: absolute;
+}
+.index-btn-buy {
+  top: 130px;
+  color: White80 (Scheme);
+  right: 20px;
+  width: 132px;
+  height: 47px;
+  position: absolute;
+  background-color: Black80 (Scheme);
+}
+.index-lbl-snipe-mode {
+  top: 114px;
+  left: 191px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-lbl-sell-normal {
+  top: 18px;
+  color: var(--dl-color-scheme-white80);
+  right: 32px;
+  position: absolute;
+}
+.index-lbl-contract {
+  top: 2px;
+  left: 20px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.index-edt-contract {
+  top: 36px;
+  left: 17px;
+  width: 400px;
+  height: 36px;
+  position: absolute;
+}
+.index-slt-mode {
+  top: 137px;
+  left: 193px;
+  width: 87px;
+  height: 33px;
+  position: absolute;
+}
+.index-edt-sell-normal {
+  top: 37px;
+  right: 36px;
+  width: 106px;
+  position: absolute;
+}
+
+.tab {
+  float: left;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: azure;
+  padding: 22px 16px;
+  width: 100px;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: dimgray;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: grey;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  left: 300px;
+}

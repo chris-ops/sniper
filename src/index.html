@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>index - chris</title>
+    <meta property="og:title" content="chris" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: azure;
+      }
+      body {
+        font-weight: 100;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: 1.3;
+        color: var(--dl-color-scheme-darkblue);
+        background-color: var(--dl-color-scheme-white);
+      }
+    </style>
+    <link
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <script src="appFunctions.js"></script>
+    <script src="buyToken.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+      <div class="index-container">
+        <div class="index-settings">
+          <input
+            type="text"
+            placeholder=" "
+            class="index-edt-sell-gwei input"
+            id="sellGwei"
+          />
+          <input
+            type="text"
+            placeholder=" "
+            class="index-edt-gas-limit input"
+            id="gasLimit"
+          />
+          <input
+            type="text"
+            placeholder=" "
+            class="index-edt-deadline input"
+          />
+          <input
+            type="text"
+            placeholder=" "
+            class="index-edt-buy-gwei input"
+            id="buyGwei"
+          />
+          <input
+            type="text"
+            placeholder=" "
+            class="index-edt-slippage input"
+            id="slippage"
+          />
+          <label class="index-lbl-buy-gwei">Buy gwei:</label>
+          <label class="index-lbl-gas-limit"><span>Gas Limit:</span></label>
+          <label class="index-lbl-deadline">Deadline in seconds:</label>
+          <label class="index-lbl-sell-gwei">Sell gwei:</label>
+          <label class="index-lbl-slippage">Slippage:</label>
+          <input type="checkbox" checked="true" class="index-chk-honeypot" id="chkHP" />
+          <label class="index-lbl-honeypot">Check for honeypot</label>
+          <label class="index-lbl-max-buy-tax">Max buy tax:</label>
+          <label class="index-lbl-max-sell-tax">Max sell tax:</label>
+          <input
+            type="text"
+            placeholder=" "
+            class="index-edt-max-sell-tax input"
+            id="maxSellTax"
+          />
+          <input
+            type="text"
+            placeholder=" "
+            class="index-edt-max-buy-tax input"
+            id="maxBuyTax"
+          />
+          <input
+            type="text"
+            placeholder=" "
+            class="index-edt-sell-percentage input"
+          />
+          <input type="checkbox" checked="true" class="index-chk-take-profit" />
+          <label class="index-lbl-take-profit">Take profit at %:</label>
+          <input
+            type="text"
+            placeholder=" "
+            class="index-edt-take-profit input"
+          />
+          <label class="index-lbl-sell-profit">Sell % of tokens:</label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Sniper')">Sniper</button>
+      <button class="tablinks" onclick="openCity(event, 'Mempool')">Mempool</button>
+      <button class="tablinks" onclick="openCity(event, 'Config')">Config</button>
+      <!-- <button class="tablinks" onclick="openCity(event, 'Telegram')">Telegram</button> -->
+    </div>
+    <div id="Config" class="tabcontent" style="display: none">
+      <div>
+        <link href="./config.css" rel="stylesheet" />
+        <link href="./style.css" rel="stylesheet" />
+        <div class="config-container">
+          <div class="config-config">
+            <textarea
+              placeholder=" "
+              class="config-txt-wallets textarea"
+              id="log"
+              readonly></textarea>
+            <input
+            type="text"
+            placeholder=" "
+            class="config-edt-private-key input"
+            id="edtWallet"
+          />
+            <button class="config-btn-remove-wallet button" onclick="removeWallet(document.getElementById('edtWallet').value)">Remove</button>
+            <button class="config-btn-save-config button" onclick="dataStorage()">Save config</button>
+            <button class="config-btn-load-config button" onclick="loadConfig()">Load config</button>
+            <button class="config-btn-reload-r-p-c button" onclick="reloadRPC(document.getElementById('newRPC').value)">Reload</button>
+            <button class="config-btn-register button" onclick="activateAppWithLicenseKey(document.getElementById('botKey').value)">Register</button>
+            <button class="config-btn-add-wallet button" onclick="addWallet(document.getElementById('edtWallet').value)">Add</button>
+            <button class="config-btn-clear-config button" onclick="clearConfig()">Clear config</button>
+            <label class="config-lbl-rpc">RPC:</label>
+            <label class="config-lbl-botKey">Bot key:</label>
+            <label class="config-lbl-private-key">Private key:</label>
+            <input
+              type="text"
+              placeholder=" "
+              class="config-edt-rpc input"
+              id="newRPC"
+              oninput="setNode(document.getElementById('newRPC').value)";
+            />
+            <input
+              type="text"
+              placeholder=" "
+              class="config-edtBotKey input"
+              id="botKey"
+            />
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="Mempool" class="tabcontent">
+      <link href="./mempool.css" rel="stylesheet" />
+
+      <div id="mempoolWindow" class="mempool-container">
+        <textarea
+          placeholder=" "
+          class="mempool-textarea textarea"
+          id="logMempool"
+        readonly></textarea>
+        <input
+          type="text"
+          placeholder=" "
+          class="mempool-edt-blockDelay input"
+          id="edtBlockDelay"
+        />
+
+        <input
+        type="text"
+        placeholder=" "
+        class="mempool-edt-contract input"
+        id="edtContractMempool"
+        />
+
+        <label class="mempool-lbl-blockDelay">Block delay:</label>
+        <button class="mempool-btn-start button" onclick="scanMempool(
+        document.getElementById('edtContractMempool').value,
+        document.getElementById('amountIn').value,
+        document.getElementById('slippage').value,
+        document.getElementById('buyGwei').value,
+        document.getElementById('gasLimit').value)">Start scanning</button>
+        <button class="mempool-btn-stop button" onclick="stopScan()" id="stopScanner">Stop scanning</button>
+        <label class="mempool-lbl-snipe-mode">Mode:</label>
+        <label class="mempool-lbl-contract">Contract:</label>
+
+        <select class="mempool-select" id="mempoolOption">
+          <option value="buyLiqAdd" selected="selected">Buy when liquidity add</option>
+          <!-- <option value="sellLiqRem">Sell when liquidity removal</option> -->
+        </select>
+
+      </div>
+    </div>
+
+    <div id="Telegram" class="tabcontent">
+      <link href="./telegram.css" rel="stylesheet" />
+
+      <div id="telegramWindow" class="telegram-container">
+        <textarea
+          placeholder=" "
+          class="telegram-textarea textarea"
+        readonly></textarea>
+        <input
+          type="text"
+          placeholder=" "
+          class="telegram-edt-blockDelay input"
+          id="asdasdasdasd"
+        />
+        <input
+        type="text"
+        placeholder=" "
+        class="telegram-edt-phoneNumber input"
+        id="edtPhone"
+        />
+        <input
+        type="text"
+        placeholder=" "
+        class="telegram-edt-contract input"
+        id="edtTelegram"
+        />
+        <input
+        type="text"
+        placeholder=" "
+        class="telegram-edt-code input"
+        id="edtCode"
+        />        
+        <input
+        type="text"
+        placeholder=" "
+        class="telegram-edt-apiHash input"
+        id="edtAPIHash"
+        />        
+        <input
+        type="text"
+        placeholder=" "
+        class="telegram-edt-apiID input"
+        id="edtAPIID"
+        />
+
+        <label class="telegram-lbl-blockDelay">Block delay:</label>
+        <label class="telegram-lbl-phoneNumber">Phone number:</label>
+        <label class="telegram-lbl-code">Code:</label>
+        <label class="telegram-lbl-apiID">API ID:</label>
+        <label class="telegram-lbl-apiHash">API Hash:</label>
+        <button onclick="telegram(
+          document.getElementById('edtPhone').value,
+          document.getElementById('edtCode').value,
+          document.getElementById('edtAPIID').value,
+          document.getElementById('edtAPIHash').value,
+          document.getElementById('edtContract').value
+        )" class="telegram-btn-start button">Start</button>
+        <button onclick="" class="telegram-btn-stop button">Stop</button>
+        <label class="telegram-lbl-snipe-mode">Mode:</label>
+        <label class="telegram-lbl-contract">Telegram name:</label>
+
+        <select class="telegram-select">
+          <option value="sellWhenLiqRemove" selected>
+            Sell when liquidity removed
+          </option>
+          <option value="buyWhenDecrease">Buy when tax decrease</option>
+          <option value="sellWhenDecrease">Sell when tax decrease</option>
+          <option value="buyLiqAdd">Buy when Liquidity Added</option>
+          <option value="sellWhenIncrease">Sell when tax increase</option>
+        </select>
+
+      </div>
+    </div>
+
+    <!SNIPER_BEGIN><!SNIPER_BEGIN><!SNIPER_BEGIN><!SNIPER_BEGIN><!SNIPER_BEGIN>
+    <div id="Sniper" class="tabcontent">
+      <link href="./sniper.css" rel="stylesheet" />
+      <div id="sniperWindow" class="sniper-container">
+        <textarea
+          placeholder=" "
+          class="sniper-textarea textarea"
+          id="logSniper"
+        readonly></textarea>
+        <input
+          type="text"
+          placeholder=" "
+          class="sniper-edt-amount-snipe input"
+          id="amountIn"
+        />
+        <input
+          type="text"
+          placeholder=" "
+          class="sniper-edt-max-spend input"
+        />
+        <input
+        type="text"
+        placeholder=" "
+        class="sniper-edt-contract input"
+        id="edtContract"
+        />
+        <input
+        type="text"
+        placeholder=" "
+        class="sniper-edt-sell-normal input"
+        id="sellNormal"
+      />
+        <label class="sniper-lbl-amount">Amount:</label>
+        <label class="sniper-lbl-max-spend">Max spend in BNB:</label>
+        <button class="sniper-btn-sell-normal button"         onclick="
+          approveMax(document.getElementById('edtContract').value)">Sell</button>
+        <button class="sniper-btn-buy button" 
+        onclick="buy(
+        document.getElementById('edtContract').value,
+        document.getElementById('amountIn').value,
+        document.getElementById('slippage').value,
+        document.getElementById('buyGwei').value,
+        document.getElementById('gasLimit').value)
+        ">Buy</button>
+        <label class="sniper-lbl-snipe-mode">Mode:</label>
+        <label class="sniper-lbl-sell-normal">Sell % of tokens:</label>
+        <label class="sniper-lbl-contract">Contract:</label>
+
+        <select class="sniper-slt-mode">
+          <option value="modeBNB">BNB</option>
+          <option value="modePercentage">Percentage</option>
+          <option value="modeTokens">Tokens</option>
+        </select>
+
+      </div>
+    </div>
+    <!SNIPER_END><!SNIPER_END><!SNIPER_END><!SNIPER_END><!SNIPER_END><!SNIPER_END><!SNIPER_END>
+
+  </body>
+</html>

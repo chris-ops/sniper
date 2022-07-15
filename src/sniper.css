@@ -1,0 +1,115 @@
+.sniper-container {
+  width: 620px;
+  height: 550px;
+  left: 280px;
+  display: block;
+  position: absolute;
+  justify-content: center;
+  background-color: #2e2e2e;
+}
+.sniper-sniper {
+  top: 10px;
+  left: 10px;
+  color: #d40606;
+  width: 598px;
+  height: 636px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  justify-content: flex-start;
+}
+.sniper-textarea {
+  left: 29px;
+  width: 570px;
+  top: 200px;
+  height: 320px;
+  position: absolute;
+}
+.sniper-edt-amount-snipe {
+  top: 136px;
+  left: 29px;
+  width: 136px;
+  height: 32px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+.sniper-edt-max-spend {
+  top: 136px;
+  left: 295px;
+  width: 125px;
+  height: 32px;
+  position: absolute;
+  background-color: Black80 (Scheme);
+}
+.sniper-lbl-amount {
+  top: 114px;
+  left: 32px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.sniper-lbl-max-spend {
+  top: 114px;
+  left: 295px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.sniper-btn-sell-normal {
+  top: 76px;
+  right: 20px;
+  width: 132px;
+  height: 40px;
+  background-color: var(--dl-color-scheme-black80);
+  color: azure;
+  position: absolute;
+}
+.sniper-btn-buy {
+  top: 130px;
+  right: 20px;
+  width: 132px;
+  height: 40px;
+  position: absolute;
+  color: azure;
+  background-color: var(--dl-color-scheme-black80);
+}
+.sniper-lbl-snipe-mode {
+  top: 114px;
+  left: 180px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.sniper-lbl-sell-normal {
+  top: 18px;
+  color: var(--dl-color-scheme-white80);
+  right: 50px;
+  position: absolute;
+}
+.sniper-lbl-contract {
+  top: 15px;
+  left: 32px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.sniper-edt-contract {
+  top: 36px;
+  left: 32px;
+  width: 390px;
+  height: 32px;
+  position: absolute;
+}
+.sniper-slt-mode {
+  top: 137px;
+  left: 180px;
+  width: 100px;
+  height: 33px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+  color: azure;
+}
+.sniper-edt-sell-normal {
+  top: 36px;
+  right: 20px;
+  width: 132px;
+  position: absolute;
+}

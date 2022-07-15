@@ -1,0 +1,174 @@
+.telegram-container {
+  width: 620px;
+  height: 550px;
+  left: 280px;
+  display: block;
+  position: absolute;
+  justify-content: center;
+  background-color: #2e2e2e;
+}
+.telegram-telegram {
+  top: 10px;
+  left: 10px;
+  color: #d40606;
+  width: 598px;
+  height: 636px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  justify-content: flex-start;
+}
+.telegram-textarea {
+  left: 29px;
+  width: 570px;
+  top: 200px;
+  height: 320px;
+  position: absolute;
+}
+.telegram-edt-blockDelay {
+  top: 150px;
+  left: 29px;
+  width: 136px;
+  height: 32px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+
+.telegram-lbl-blockDelay {
+  top: 130px;
+  left: 32px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+
+.telegram-edt-phoneNumber {
+  top: 90px;
+  left: 29px;
+  width: 136px;
+  height: 32px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+
+.telegram-lbl-phoneNumber {
+  top: 70px;
+  left: 32px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+
+.telegram-edt-code {
+  top: 90px;
+  left: 180px;
+  width: 80px;
+  height: 32px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+
+.telegram-lbl-code {
+  top: 70px;
+  left: 180px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+
+.telegram-edt-apiHash {
+  top: 90px;
+  left: 280px;
+  width: 320px;
+  height: 32px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+
+.telegram-lbl-apiHash {
+  top: 70px;
+  left: 280px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+
+.telegram-edt-apiID {
+  top: 36px;
+  left: 440px;
+  width: 160px;
+  height: 32px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+}
+
+.telegram-lbl-apiID {
+  top: 16px;
+  left: 440px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+
+.telegram-lbl-snipe-mode {
+  top: 130px;
+  left: 193px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+
+.telegram-btn-connect {
+  top: 90px;
+  right: 180px;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  color: azure;
+  background-color: var(--dl-color-scheme-black80);
+}
+
+.telegram-btn-start {
+  top: 150px;
+  right: 120px;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  color: azure;
+  background-color: var(--dl-color-scheme-black80);
+}
+
+.telegram-btn-stop {
+  top: 150px;
+  right: 20px;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  color: azure;
+  background-color: var(--dl-color-scheme-black80);
+}
+
+.telegram-lbl-contract {
+  top: 15px;
+  left: 32px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.telegram-edt-contract {
+  top: 36px;
+  left: 32px;
+  width: 390px;
+  height: 32px;
+  position: absolute;
+}
+.telegram-select {
+  top: 150px;
+  left: 193px;
+  width: 210px;
+  height: 32px;
+  position: absolute;
+  background-color: var(--dl-color-scheme-black80);
+  color: azure;
+}
+.telegram-edt-sell-normal {
+  top: 32px;
+  right: 20px;
+  width: 132px;
+  position: absolute;
+}

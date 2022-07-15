@@ -1,0 +1,122 @@
+.config-container {
+  width: 620px;
+  height: 550px;
+  display: block;
+  left: 280px;
+  position: absolute;
+  border-color: var(--dl-color-scheme-darkblue);
+  border-style: groove;
+  justify-content: center;
+  background-color: #2e2e2e;
+}
+
+.config-txt-wallets {
+  top: 83px;
+  left: 25px;
+  width: 420px;
+  height: 277px;
+  position: absolute;
+}
+.config-btn-remove-wallet {
+  top: 84px;
+  color: var(--dl-color-scheme-white80);
+  right: 20px;
+  width: 125px;
+  height: 32px;
+  position: absolute;
+}
+.config-btn-save-config {
+  left: 156px;
+  color: White80 (Scheme);
+  width: 125px;
+  bottom: 9px;
+  height: 32px;
+  position: absolute;
+  background-color: Black80 (Scheme);
+}
+.config-btn-load-config {
+  left: 19px;
+  color: White80 (Scheme);
+  width: 125px;
+  bottom: 9px;
+  height: 32px;
+  position: absolute;
+  background-color: Black80 (Scheme);
+}
+
+.config-btn-clear-config {
+  left: 295px;
+  color: White80 (Scheme);
+  width: 125px;
+  bottom: 9px;
+  height: 32px;
+  position: absolute;
+  background-color: Black80 (Scheme);
+}
+
+.config-btn-reload-r-p-c {
+  top: 400px;
+  color: White80 (Scheme);
+  right: 28px;
+  width: 125px;
+  height: 32px;
+  position: absolute;
+  background-color: Black80 (Scheme);
+}
+.config-btn-register {
+  top: 460px;
+  color: White80 (Scheme);
+  right: 28px;
+  width: 125px;
+  height: 32px;
+  position: absolute;
+  background-color: Black80 (Scheme);
+}
+.config-btn-add-wallet {
+  top: 36px;
+  right: 20px;
+  width: 125px;
+  height: 32px;
+  position: absolute;
+  background-color: darkslategrey;
+}
+.config-lbl-rpc {
+  top: 376px;
+  left: 29px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.config-lbl-botKey {
+  top: 440px;
+  left: 29px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+
+.config-lbl-private-key {
+  top: 12px;
+  left: 29px;
+  color: var(--dl-color-scheme-white80);
+  position: absolute;
+}
+.config-edt-rpc {
+  top: 400px;
+  left: 25px;
+  width: 420px;
+  height: 32px;
+  position: absolute;
+}
+.config-edtBotKey {
+  top: 460px;
+  left: 25px;
+  width: 420px;
+  height: 32px;
+  position: absolute;
+}
+.config-edt-private-key {
+  top: 32px;
+  left: 25px;
+  width: 420px;
+  height: 36px;
+  position: absolute;
+}
